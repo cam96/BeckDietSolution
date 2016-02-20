@@ -1,9 +1,21 @@
 ﻿body {
 }
 
-header
+h1
 {
     text-align:center;
     font: bold 25px arial, verdana;
     color: #00C5CD;
+}
+
+#chartContainer
+{
+    width: 90%;
+    margin: auto;
+}
+
+.chartContainerCol1, .chartContainerCol2, .chartContainerCol3 {
+    width: 30%;
+    margin: 1%;
+    display: inline-block;
 }
