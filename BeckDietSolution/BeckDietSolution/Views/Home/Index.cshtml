@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Index";
 }
 
@@ -16,6 +17,46 @@
                 <h2 class="chartContainerCol1">Time</h2>
                 <h2 class="chartContainerCol2">How my stomach feels</h2>
                 <h2 class="chartContainerCol3">Strength of hunger (0-10)</h2>
+            </div>
+            <div id="chartRow2">
+                <label class="chartContainerCol1">Before meal</label>
+                <input type="text" name="chartBeforeMealStomachFeelingText" placeholder="How does your stomach feel?" class="chartContainerCol2"/>
+                <select required class="chartContainerCol3">
+                    @foreach (int i in Model)
+	                {
+		                <option>@i</option>
+	                }
+                </select>
+            </div>
+            <div id="chartRow3">
+                <label class="chartContainerCol1">Midway through meal</label>
+                <input type="text" name="chartBeforeMealStomachFeelingText" placeholder="How does your stomach feel?" class="chartContainerCol2" />
+                <select required class="chartContainerCol3">
+                    @foreach (int i in Model)
+                    {
+                        <option>@i</option>
+                    }
+                </select>
+            </div>
+            <div id="chartRow4">
+                <label class="chartContainerCol1">Immediately after meal</label>
+                <input type="text" name="chartBeforeMealStomachFeelingText" placeholder="How does your stomach feel?" class="chartContainerCol2" />
+                <select required class="chartContainerCol3">
+                    @foreach (int i in Model)
+                    {
+                        <option>@i</option>
+                    }
+                </select>
+            </div>
+            <div id="chartRow5">
+                <label class="chartContainerCol1">20 minutes after meal</label>
+                <input type="text" name="chartBeforeMealStomachFeelingText" placeholder="How does your stomach feel?" class="chartContainerCol2" />
+                <select required class="chartContainerCol3">
+                    @foreach (int i in Model)
+                    {
+                        <option>@i</option>
+                    }
+                </select>
             </div>
         </div>
     </body>
